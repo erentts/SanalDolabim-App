@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="135dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Welcome"
+        android:textColor="@color/purple_500"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddDrawer"
+        android:layout_width="110dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="26dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Add Drawer"
+        app:layout_constraintEnd_toStartOf="@+id/btnDrawers"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnCombineRoom"
+        android:layout_width="110dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="76dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Combine Room"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnClothes"
+        app:layout_constraintTop_toBottomOf="@+id/btnDrawers" />
+
+    <Button
+        android:id="@+id/btnActivities"
+        android:layout_width="115dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Activities"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/btnAddActivity"
+        app:layout_constraintTop_toBottomOf="@+id/btnCombineRoom" />
+
+    <Button
+        android:id="@+id/btnAddActivity"
+        android:layout_width="110dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Add Activity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnClothes" />
+
+    <Button
+        android:id="@+id/btnDrawers"
+        android:layout_width="110dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="76dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Drawers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnAddDrawer"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnClothes"
+        android:layout_width="110dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="27dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Clothes"
+        app:layout_constraintEnd_toStartOf="@+id/btnCombineRoom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDrawers" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

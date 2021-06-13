@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CombineRoomScreen">
+
+    <TextView
+        android:id="@+id/textView_kabin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="112dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Combine Room"
+        android:textColor="@color/purple_500"
+        android:textSize="27sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="36dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Previous Combines"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSaveCombine"
+        app:layout_constraintTop_toBottomOf="@+id/btnFootChoice" />
+
+    <Button
+        android:id="@+id/btnSaveCombine"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="18dp"
+        android:backgroundTint="@color/purple_500"
+        android:drawableTint="#FFFFFF"
+        android:text="Save Combine"
+        app:layout_constraintEnd_toStartOf="@+id/btnPrevious"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thumbnail5" />
+
+    <Button
+        android:id="@+id/btnBackMain"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSaveCombine" />
+
+    <Button
+        android:id="@+id/btnHeadChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="91dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Choose Head"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/thumbnail1"
+        app:layout_constraintTop_toBottomOf="@+id/textView_kabin" />
+
+    <ImageView
+        android:id="@+id/thumbnail1"
+        android:layout_width="103dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnHeadChoice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_kabin"
+        tools:srcCompat="@android:drawable/ic_input_add" />
+
+    <Button
+        android:id="@+id/btnFaceChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="95dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Choose Face"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/thumbnail2"
+        app:layout_constraintTop_toBottomOf="@+id/btnHeadChoice" />
+
+    <ImageView
+        android:id="@+id/thumbnail2"
+        android:layout_width="105dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnFaceChoice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thumbnail1"
+        tools:srcCompat="@android:drawable/ic_input_add" />
+
+    <Button
+        android:id="@+id/btnUpperChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="37dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Choose Upper Body"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/thumbnail3"
+        app:layout_constraintTop_toBottomOf="@+id/btnFaceChoice" />
+
+    <ImageView
+        android:id="@+id/thumbnail3"
+        android:layout_width="108dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="23dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnUpperChoice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thumbnail2"
+        tools:srcCompat="@android:drawable/ic_input_add" />
+
+    <Button
+        android:id="@+id/btnBottomChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="37dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Choose Bottom Body"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/thumbnail4"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpperChoice" />
+
+    <ImageView
+        android:id="@+id/thumbnail4"
+        android:layout_width="107dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="23dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnBottomChoice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thumbnail3"
+        tools:srcCompat="@android:drawable/ic_input_add" />
+
+    <Button
+        android:id="@+id/btnFootChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="90dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Choose Foot"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/thumbnail5"
+        app:layout_constraintTop_toBottomOf="@+id/btnBottomChoice" />
+
+    <ImageView
+        android:id="@+id/thumbnail5"
+        android:layout_width="102dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="23dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnFootChoice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thumbnail4"
+        tools:srcCompat="@android:drawable/ic_input_add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
