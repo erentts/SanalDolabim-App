@@ -18,10 +18,10 @@ import tr.edu.yildiz.erentutus.entities.Activity;
 
 public class AddActivity extends AppCompatActivity {
     EditText txtActivityName,txtActivityDate,txtActivityLocation,txtActivityType;
-    String name,date,location,type,price;
+    String name,date,location,type;
     Button btnSaveActivity,btnBackAct;
-    private RecyclerView Recycler;
-    private RecyclerCombines adapter;
+    /*private RecyclerView Recycler;
+    private RecyclerCombines adapter;*/
     private database data;
 
     @Override
@@ -30,7 +30,7 @@ public class AddActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add2);
 
         getInputs();
-        adapter.notifyDataSetChanged();
+        //adapter.notifyDataSetChanged();
         data = new database(this);
 
         btnSaveActivity.setOnClickListener(new View.OnClickListener() {
@@ -66,10 +66,10 @@ public class AddActivity extends AppCompatActivity {
         txtActivityType = findViewById(R.id.txtActivityType);
         btnSaveActivity = findViewById(R.id.btnSaveActivity);
         btnBackAct = findViewById(R.id.btnBackAct);
-        Recycler = (RecyclerView) findViewById(R.id.recyclerview);
+        /*Recycler = (RecyclerView) findViewById(R.id.recyclerview);
         adapter = new RecyclerCombines(AddActivity.this,1);
         Recycler.setAdapter(adapter);
-        Recycler.setLayoutManager(new LinearLayoutManager(this));
+        Recycler.setLayoutManager(new LinearLayoutManager(this));*/
     }
     public void getInformation(){
         name = txtActivityName.getText().toString();

@@ -28,9 +28,9 @@ public class UpdateActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Activity.activities.get(position).setName(txtUpdateName.getText().toString());
-                Activity.activities.get(position).setName(txtUpdateType.getText().toString());
-                Activity.activities.get(position).setName(txtUpdateDate.getText().toString());
-                Activity.activities.get(position).setName(txtUpdateLocation.getText().toString());
+                Activity.activities.get(position).setDate(txtUpdateType.getText().toString());
+                Activity.activities.get(position).setType(txtUpdateDate.getText().toString());
+                Activity.activities.get(position).setLocation(txtUpdateLocation.getText().toString());
             }
         });
 
